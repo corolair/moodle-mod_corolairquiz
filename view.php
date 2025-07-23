@@ -36,10 +36,23 @@ if (!is_dir($CFG->dirroot . '/local/corolair')) {
     return;
 }
 require_capability('mod/corolairquiz:view', $context);
-require_capability('local/corolair:createtutor', $context);
-redirect(
-    new moodle_url("/local/corolair/quiz.php"),
-    '',
-    0
-);
+
+// Redirect based on role.
+if (has_capability('moodle/course:manageactivities', $context)) {
+    // Teacher or editingteacher
+    redirect(
+        new moodle_url("/local/corolair/quiz_trainer.php"),
+        '',
+        0
+    );
+} else {
+    // Student view
+    redirect(
+        new moodle_url("/local/corolair/quiz_student.php", ['corolairquizid' => $id,'courseid' => $course->id]),
+        '',
+        0
+    );
+}
+
+
 

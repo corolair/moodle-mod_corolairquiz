@@ -39,7 +39,7 @@ $capabilities = [
         'archetypes' => [
             'teacher' => CAP_ALLOW,
             'editingteacher' => CAP_ALLOW,
-            'student' => CAP_PREVENT,
+            'student' => CAP_ALLOW,
         ],
         'description' => get_string('corolairquiz:view', 'mod_corolairquiz'),
     ],
