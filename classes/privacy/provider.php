@@ -91,10 +91,6 @@ class provider implements \core_privacy\local\metadata\provider,
     /**
      * Retrieves the list of contexts for a given user ID.
      *
-     * This function fetches the contexts associated with a user ID from an external service
-     * and adds them to a context list. If the external service is unavailable or returns an error,
-     * an empty context list is returned.
-     *
      * @param int $userid The ID of the user whose contexts are being retrieved.
      * @return contextlist The list of contexts associated with the user.
      */
@@ -105,11 +101,6 @@ class provider implements \core_privacy\local\metadata\provider,
 
     /**
      * Exports user data for the given approved context list.
-     *
-     * This function retrieves the API key from the configuration, constructs a URL to an external service,
-     * and sends a request to export user data. If the API key is not set or invalid, or if the request fails,
-     * the function returns without exporting any data. If the request is successful, the function decodes the
-     * JSON response and exports the data using Moodle's privacy API.
      *
      * @param approved_contextlist $approvedcontextlist The list of approved contexts for the user.
      */
@@ -140,11 +131,6 @@ class provider implements \core_privacy\local\metadata\provider,
     /**
      * Deletes data for a user based on the provided context list.
      *
-     * This function retrieves the API key from the configuration and checks if it is valid.
-     * If the API key is not set or is invalid, the function returns without performing any action.
-     * Otherwise, it constructs a URL to the Corolair service to delete the user's data and sends
-     * a DELETE request to that URL.
-     *
      * @param approved_contextlist $contextlist The context list containing the user whose data is to be deleted.
      */
     public static function delete_data_for_user(approved_contextlist $contextlist) {
@@ -153,10 +139,6 @@ class provider implements \core_privacy\local\metadata\provider,
 
     /**
      * Deletes data for users specified in the approved user list.
-     *
-     * This function sends a DELETE request to the external Corolair service to delete user data.
-     * It retrieves the API key from the local configuration and constructs the request URL for each user.
-     * If the API key is not set or is invalid, the function returns without performing any action.
      *
      * @param approved_userlist $userlist The list of approved users whose data needs to be deleted.
      */

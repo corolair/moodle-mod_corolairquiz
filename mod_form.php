@@ -82,19 +82,7 @@ class mod_corolairquiz_mod_form extends moodleform_mod {
      * @return array An array of error messages, indexed by field name.
      */
     public function validation($data, $files) {
-        global $DB;
         $errors = parent::validation($data, $files);
-        // Check if another instance already exists in this course.
-        // if (!empty($data['course'])) {
-        //     $courseid = $data['course'];
-        //     // Allow editing existing instance.
-        //     if (empty($this->current->id)) {
-        //         $exists = $DB->record_exists('corolairquiz', ['course' => $courseid]);
-        //         if ($exists) {
-        //             $errors['name'] = get_string('onlyoneinstanceallowed', 'mod_corolairquiz');
-        //         }
-        //     }
-        // }
         return $errors;
     }
 }

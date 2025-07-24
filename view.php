@@ -39,16 +39,16 @@ require_capability('mod/corolairquiz:view', $context);
 
 // Redirect based on role.
 if (has_capability('moodle/course:manageactivities', $context)) {
-    // Teacher or editingteacher
+    // Teacher or editingteacher.
     redirect(
-        new moodle_url("/local/corolair/quiz_trainer.php"),
+        new moodle_url("/local/corolair/quiz_trainer.php", ['corolairquizid' => $id, 'courseid' => $course->id]),
         '',
         0
     );
 } else {
-    // Student view
+    // Student view.
     redirect(
-        new moodle_url("/local/corolair/quiz_student.php", ['corolairquizid' => $id,'courseid' => $course->id]),
+        new moodle_url("/local/corolair/quiz_student.php", ['corolairquizid' => $id, 'courseid' => $course->id]),
         '',
         0
     );
