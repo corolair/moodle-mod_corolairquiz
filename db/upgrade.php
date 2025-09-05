@@ -15,20 +15,18 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Version information for the Corolair Quiz plugin.
+ * Capability definitions for the Corolair Quiz plugin.
  *
- * This file defines the version and other metadata for the "mod_corolairquiz" plugin.
- * It ensures compatibility and proper registration with Moodle.
+ * This file contains the capability definitions for the Corolair Quiz plugin.
+ * Capabilities are used to control access to various features within the plugin.
  *
  * @package    mod_corolairquiz
  * @copyright  2024 Corolair
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-defined('MOODLE_INTERNAL') || die();
-
-$plugin->component = 'mod_corolairquiz';
-$plugin->version = 2025090500;
-$plugin->requires = 2020110900;
-$plugin->maturity = MATURITY_STABLE;
-$plugin->release = '1.0';
+function xmldb_corolairquiz_upgrade($oldversion) {
+    global $DB;
+    $result = true;
+    return $result;
+}
