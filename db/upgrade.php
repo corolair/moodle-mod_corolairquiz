@@ -25,6 +25,12 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
+/**
+ * Upgrade the Corolair Quiz plugin.
+ *
+ * @param int $oldversion The old version of the plugin.
+ * @return bool True if the upgrade was successful, false otherwise.
+ */
 function xmldb_corolairquiz_upgrade($oldversion) {
     global $DB;
     $result = true;

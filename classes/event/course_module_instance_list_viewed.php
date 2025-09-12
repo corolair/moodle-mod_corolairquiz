@@ -1,5 +1,5 @@
 <?php
-// This file is part of Moodle - http://moodle.org/
+// This file is part of Moodle - http://moodle.org/.
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -15,23 +15,23 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Version information for the Corolair Quiz plugin.
- *
- * This file defines the version and other metadata for the "mod_corolairquiz" plugin.
- * It ensures compatibility and proper registration with Moodle.
+ * The mod_corolairquiz instance list viewed event.
  *
  * @package    mod_corolairquiz
  * @copyright  2024 Corolair
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-defined('MOODLE_INTERNAL') || die();
+namespace mod_corolairquiz\event;
 
-$plugin->component = 'mod_corolairquiz';
-$plugin->version = 2025091200;
-$plugin->requires = 2020110900;
-$plugin->maturity = MATURITY_STABLE;
-$plugin->release = '1.0.0';
-$plugin->dependencies = [
-    'local_corolair' => 2025091100,
-];
+
+/**
+ * The mod_corolairquiz instance list viewed event class.
+ *
+ * @package    mod_corolairquiz
+ * @copyright  2024 Corolair
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+class course_module_instance_list_viewed extends \core\event\course_module_instance_list_viewed {
+
+}
