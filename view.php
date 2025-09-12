@@ -28,6 +28,14 @@ $cm = get_coursemodule_from_id('corolairquiz', $id, 0, false, MUST_EXIST);
 $course = get_course($cm->course);
 $context = context_module::instance($cm->id);
 require_login($course, true, $cm);
+
+// Trigger module viewed event.
+$event = \mod_corolairquiz\event\course_module_viewed::create([
+    'objectid' => $cm->instance,
+    'context'  => $context,
+]);
+$event->trigger();
+
 echo $OUTPUT->header();
 if (!is_dir($CFG->dirroot . '/local/corolair')) {
     $output = $PAGE->get_renderer('mod_corolairquiz');
