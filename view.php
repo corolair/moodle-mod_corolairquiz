@@ -83,7 +83,7 @@ if (has_capability('moodle/course:manageactivities', $context)) {
     }
 
     $createtutorwithcapability = get_config('local_corolair', 'createtutorwithcapability') === 'true';
-    $authurl = "https://services.corolair.dev/moodle-integration/auth/v2";
+    $authurl = "https://services.corolair.com/moodle-integration/auth/v2";
     $postdata = json_encode([
         'email' => $USER->email,
         'apiKey' => $apikey,
