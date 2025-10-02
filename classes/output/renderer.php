@@ -48,4 +48,17 @@ class renderer extends plugin_renderer_base {
         return $this->render_from_template('mod_corolairquiz/local_plugin_not_installed', $data);
     }
 
+    /**
+     * Renders the quiz student template.
+     *
+     * This method prepares the data and renders the 'mod_corolairquiz/quiz_student' template.
+     *
+     * @param string $moodleoptions The Moodle options.
+     * @return string The rendered template.
+     */
+    public function render_quiz_student($moodleoptions) {
+        // Pass each field individually to the template for direct access.
+        return $this->render_from_template('mod_corolairquiz/quiz_student', $moodleoptions);
+    }
+
 }
