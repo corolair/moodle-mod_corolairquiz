@@ -1,6 +1,6 @@
 # Corolair-Quiz Moodle Plugin
 
-**Version:** 1.1.0
+**Version:** 1.1.1
 
-**Last Updated:** 2025/10/02
+**Last Updated:** 2025/10/31
 
