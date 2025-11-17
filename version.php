@@ -28,10 +28,10 @@
 defined('MOODLE_INTERNAL') || die();
 
 $plugin->component = 'mod_corolairquiz';
-$plugin->version = 2025111700;
+$plugin->version = 2025111701;
 $plugin->requires = 2020110900;
 $plugin->maturity = MATURITY_STABLE;
-$plugin->release = '1.1.2';
+$plugin->release = '1.1.3';
 $plugin->dependencies = [
     'local_corolair' => 2025091100,
 ];
