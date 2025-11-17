@@ -18,7 +18,7 @@
  * Activity view page for the mod_corolairquiz plugin.
  *
  * @package    mod_corolairquiz
- * @copyright  2024 Corolair
+ * @copyright  2025 Raison
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
@@ -67,7 +67,10 @@ $apikey = get_config('local_corolair', 'apikey');
 if (empty($apikey) ||
     strpos($apikey, 'No Corolair Api Key') === 0 ||
     strpos($apikey, 'Aucune Clé API Corolair') === 0 ||
-    strpos($apikey, 'No hay clave API de Corolair') === 0
+    strpos($apikey, 'No hay clave API de Corolair') === 0 ||
+    strpos($apikey, 'No Raison Api Key') === 0 ||
+    strpos($apikey, 'Aucune Clé API Raison') === 0 ||
+    strpos($apikey, 'No hay clave API de Raison') === 0
 ) {
     $output = $PAGE->get_renderer('mod_corolairquiz');
     echo $output->render_local_plugin_not_installed();
@@ -126,27 +129,27 @@ if (has_capability('moodle/course:manageactivities', $context)) {
                 [
                     'target' => '_blank',
                     'class' => 'btn btn-primary',
-                    'id'    => 'corolair-continue',
+                    'id'    => 'raison-continue',
                 ]
             ),
-            'corolair-fallback',
+            'raison-fallback',
             ['style' => 'margin-top:20px; text-align:center; width: 100%;']
         );
         $continueurl = $CFG->wwwroot . '/course/view.php?id=' . $course->id;
         // JS: try auto-open + handle manual click.
         echo html_writer::tag('script', "
-            // Try to auto-open Corolair in a new tab
+            // Try to auto-open Raison in a new tab
             var win = window.open('$targeturlout', '_blank');
             if (win && !win.closed && typeof win.closed != 'undefined') {
                 // Auto-open worked: hide fallback
-                var fb = document.getElementById('corolair-fallback');
+                var fb = document.getElementById('raison-fallback');
                 if (fb) fb.style.display = 'none';
                 // Redirect Moodle tab home
                 window.location.href = '" . $continueurl . "';
             }
 
             // If user clicks Continue manually
-            var continueBtn = document.getElementById('corolair-continue');
+            var continueBtn = document.getElementById('raison-continue');
             if (continueBtn) {
                 continueBtn.addEventListener('click', function(e) {
                     // Redirect Moodle tab home after opening new tab

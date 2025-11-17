@@ -15,11 +15,11 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Restore task for the Corolair Quiz activity module.
+ * Restore task for the Raison Quiz activity module.
  *
  * @package    mod_corolairquiz
  * @subpackage backup-moodle2
- * @copyright 2024 Corolair
+ * @copyright 2025 Raison
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 

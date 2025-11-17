@@ -21,7 +21,7 @@
  * custom templates for the mod_corolairquiz plugin.
  *
  * @package    mod_corolairquiz
- * @copyright  2024 Corolair
+ * @copyright  2025 Raison
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
