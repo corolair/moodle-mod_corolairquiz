@@ -15,19 +15,19 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Language strings for the Corolair Quiz Plugin.
+ * Language strings for the Raison Quiz Plugin.
  *
  * @package   mod_corolairquiz
- * @copyright  2024 Corolair
+ * @copyright  2025 Raison
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-$string['pluginname'] = 'Corolair Quiz';
-$string['modulename'] = 'Corolair Quiz';
-$string['modulenameplural'] = 'corolair Quizzes';
-$string['corolairquiz:view'] = 'Access corolair Quiz';
-$string['corolairquiz:addinstance'] = 'Add a new corolair quiz to a course';
-$string['noinstances'] = 'There are no corolair quizzes in this course.';
-$string['defaultactivityname'] = 'Corolair Quiz';
+$string['pluginname'] = 'Raison Quiz';
+$string['modulename'] = 'Raison Quiz';
+$string['modulenameplural'] = 'Raison Quizzes';
+$string['corolairquiz:view'] = 'Access Raison Quiz';
+$string['corolairquiz:addinstance'] = 'Add a new Raison quiz to a course';
+$string['noinstances'] = 'There are no Raison quizzes in this course.';
+$string['defaultactivityname'] = 'Raison Quiz';
 $string['name'] = 'Name';
-$string['onlyoneinstanceallowed'] = 'Only one instance of Corolair Quiz is allowed per course.';
+$string['onlyoneinstanceallowed'] = 'Only one instance of Raison Quiz is allowed per course.';

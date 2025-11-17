@@ -18,7 +18,7 @@
  * Activity creation/editing form for the mod_corolairquiz plugin
  *
  * @package    mod_corolairquiz
- * @copyright  2024 Corolair
+ * @copyright  2025 Raison
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
@@ -29,7 +29,7 @@ require_once($CFG->dirroot.'/course/moodleform_mod.php');
 /**
  * Class mod_corolairquiz_mod_form
  *
- * This class defines the form elements and behavior for the Corolair Quiz module in Moodle.
+ * This class defines the form elements and behavior for the Raison Quiz module in Moodle.
  * It extends the moodleform_mod class to provide a custom form for creating and editing module instances.
  */
 class mod_corolairquiz_mod_form extends moodleform_mod {

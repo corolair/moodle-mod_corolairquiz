@@ -18,7 +18,7 @@
  * Privacy Subsystem implementation for mod_corolairquiz.
  *
  * @package   mod_corolairquiz
- * @copyright 2024 Corolair
+ * @copyright 2025 Raison
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
@@ -71,7 +71,7 @@ if (interface_exists('\core_privacy\local\request\core_userlist_provider')) {
  * Implementation of the privacy subsystem plugin provider for the mod_corolairquiz plugin.
  *
  * @package    mod_corolairquiz
- * @copyright  2024 Corolair
+ * @copyright  2025 Raison
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class provider implements \core_privacy\local\metadata\provider,
@@ -79,10 +79,10 @@ class provider implements \core_privacy\local\metadata\provider,
     mod_corolairquiz_userlist_provider {
 
     /**
-     * Returns metadata about the external location link for Corolair.
+     * Returns metadata about the external location link for Raison.
      *
      * @param collection $collection The initial collection to add metadata to.
-     * @return collection The updated collection with Corolair metadata added.
+     * @return collection The updated collection with Raison metadata added.
      */
     public static function get_metadata(collection $collection): collection {
         return $collection;
