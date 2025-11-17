@@ -15,18 +15,18 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Capability definitions for the Corolair Quiz plugin.
+ * Capability definitions for the Raison Quiz plugin.
  *
- * This file contains the capability definitions for the Corolair Quiz plugin.
+ * This file contains the capability definitions for the Raison Quiz plugin.
  * Capabilities are used to control access to various features within the plugin.
  *
  * @package    mod_corolairquiz
- * @copyright  2024 Corolair
+ * @copyright  2025 Raison
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 /**
- * Upgrade the Corolair Quiz plugin.
+ * Upgrade the Raison Quiz plugin.
  *
  * @param int $oldversion The old version of the plugin.
  * @return bool True if the upgrade was successful, false otherwise.

@@ -18,7 +18,7 @@
  * Define all the backup steps that will be used by the backup_corolairquiz_activity_task
  *
  * @package    mod_corolairquiz
- * @copyright  2024 Corolair
+ * @copyright  2025 Raison
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
@@ -27,7 +27,7 @@
  *
  * @package     mod_corolairquiz
  * @category    backup
- * @copyright   2024 Corolair
+ * @copyright   2025 Raison
  * @license     http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 

@@ -1,4 +1,4 @@
-# Corolair-Quiz Moodle Plugin
+# Raison-Quiz Moodle Plugin
 
 **Version:** 1.1.1
 

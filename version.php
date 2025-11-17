@@ -15,13 +15,13 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Version information for the Corolair Quiz plugin.
+ * Version information for the Raison Quiz plugin.
  *
  * This file defines the version and other metadata for the "mod_corolairquiz" plugin.
  * It ensures compatibility and proper registration with Moodle.
  *
  * @package    mod_corolairquiz
- * @copyright  2024 Corolair
+ * @copyright  2025 Raison
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 

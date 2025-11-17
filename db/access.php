@@ -15,24 +15,24 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Capability definitions for the Corolair Quiz plugin.
+ * Capability definitions for the Raison Quiz plugin.
  *
- * This file contains the capability definitions for the Corolair Quiz plugin.
+ * This file contains the capability definitions for the Raison Quiz plugin.
  * Capabilities are used to control access to various features within the plugin.
  *
  * @package    mod_corolairquiz
- * @copyright  2024 Corolair
+ * @copyright  2025 Raison
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $capabilities = [
-    // Capability to view and access quizzes within the Corolair Quiz plugin.
-    // This capability allows users to create and manage quizzes within the Corolair Quiz plugin.
+    // Capability to view and access quizzes within the Raison Quiz plugin.
+    // This capability allows users to create and manage quizzes within the Raison Quiz plugin.
     // @captype      read
     // @contextlevel CONTEXT_MODULE
-    // @description  Allows users to create and manage quizzes within the Corolair Quiz plugin.
+    // @description  Allows users to create and manage quizzes within the Raison Quiz plugin.
     'mod/corolairquiz:view' => [
         'captype' => 'read',
         'contextlevel' => CONTEXT_MODULE,
@@ -43,11 +43,11 @@ $capabilities = [
         ],
         'description' => get_string('corolairquiz:view', 'mod_corolairquiz'),
     ],
-    // Capability to add Corolair Quiz plugin as an activity.
-    // This capability allows users to create an activity using Corolair Quiz plugin.
+    // Capability to add Raison Quiz plugin as an activity.
+    // This capability allows users to create an activity using Raison Quiz plugin.
     // @captype      write
     // @contextlevel CONTEXT_COURSE
-    // @description  Allows users to create an activity using Corolair Quiz plugin.
+    // @description  Allows users to create an activity using Raison Quiz plugin.
     'mod/corolairquiz:addinstance' => [
         'riskbitmask' => RISK_XSS,
         'captype' => 'write',
